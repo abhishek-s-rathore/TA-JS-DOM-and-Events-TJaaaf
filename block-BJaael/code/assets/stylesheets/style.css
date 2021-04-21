@@ -1,0 +1,80 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: ;
+  --darktext: #000000;
+  --lighttext: rgb(160, 160, 160);
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Staatliches", cursive;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: whitesmoke;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
