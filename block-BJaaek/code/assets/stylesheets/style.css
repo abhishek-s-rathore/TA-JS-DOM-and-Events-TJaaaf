@@ -81,7 +81,7 @@ h1 {
   height: 100%;
   width: 50%;
 }
-.text {
+.text1, .text2 {
   height: 100%;
   display: flex;
   justify-content: center;
