@@ -83,6 +83,8 @@ function main() {
       elem.style.color = "#228efa";
       elem.style.fontSize = "4rem";
     });
+
+    message.innerText = `Let's Play!`;
   });
 }
 
