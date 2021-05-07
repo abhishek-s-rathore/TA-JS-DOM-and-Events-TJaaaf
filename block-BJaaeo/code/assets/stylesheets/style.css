@@ -1,0 +1,140 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: #722233;
+  --secondary: #cfcfcf;
+  --tertiory: #358180;
+  --bgcolor: #f2f4f8;
+  --secbtn: #3d1b10;
+  --darktext: #000000;
+  --lighttext: #ffffff;
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: var(--bgcolor);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0.25rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.container {
+  background-color: var(--bgcolor);
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: 6rem 6rem 6rem 6rem;
+  grid-template-rows: 6rem 3.5rem 3.5rem 3.5rem 3.5rem 3.5rem;
+}
+.box {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 5px;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: var(--secondary);
+  padding-bottom: 0.25rem;
+}
+.soln {
+  color: white;
+  background-color: black;
+  grid-column: 1/-1;
+  text-align: right;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  font-size: 2.4rem;
+}
+
+.equal {
+  grid-column: -2/-1;
+  grid-row: 3/-1;
+  background-color: var(--tertiory);
+}
+
+.opration {
+  background-color: var(--primary);
+  color: var(--lighttext);
+}
+
+.clear {
+  background-color: var(--secbtn);
+  color: var(--lighttext);
+}
