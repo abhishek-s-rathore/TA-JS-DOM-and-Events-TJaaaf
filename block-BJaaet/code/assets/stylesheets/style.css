@@ -1,0 +1,151 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: rgb(249, 187, 116);
+  --secondary: rgb(139, 194, 235);
+  --darktext: #000000;
+  --lighttext: rgb(143, 143, 143);
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: flex-start;
+  margin: 1rem;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-47 {
+  flex: 0 1 47%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Position*/
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Form Control */
+.form-control {
+  background: linear-gradient(to right, rgb(95, 246, 246), rgb(228, 93, 228));
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+}
+
+#movieInput {
+  width: 25rem;
+  height: 2.4rem;
+  padding-left: 7px;
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+}
+
