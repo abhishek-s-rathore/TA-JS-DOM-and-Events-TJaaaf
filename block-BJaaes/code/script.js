@@ -85,6 +85,7 @@ function handleSubmit(event) {
   //   Validation for password
   if (password.value === "") {
     inputError.password = "Password can not be empty.";
+    updateError("password");
   } else if (password.value.length < 8) {
     inputError.password = "Password can not be less than eight characters.";
     updateError("password");
