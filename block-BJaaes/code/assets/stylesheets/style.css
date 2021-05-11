@@ -1,0 +1,175 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: linear-gradient(to right, cyan, mediumseagreen);
+  --darktext: #000000;
+  --lighttext: rgb(150, 150, 150);
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Itim", cursive;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: flex-start;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-47 {
+  flex: 0 1 47%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+/*Buttons*/
+
+.btn-primary {
+  color: #fff;
+  background-color: rgb(255, 118, 118);
+  border: 1px solid darkgray;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Position*/
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Form Control */
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  width: 35rem;
+  margin-top: 50px;
+  line-height: 2.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form input {
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  padding-left: 7px;
+}
+
+form button {
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  background-color: lightcoral;
+}
+
+small {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: red;
+}
+
+.error {
+  border: 2.5px solid red;
+}
+
+.success {
+  border: 2.5px solid rgb(39, 175, 39);
+}
