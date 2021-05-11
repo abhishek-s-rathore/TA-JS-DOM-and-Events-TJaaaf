@@ -165,3 +165,11 @@ small {
   font-weight: normal;
   color: red;
 }
+
+.error {
+  border: 2.5px solid red;
+}
+
+.success {
+  border: 2.5px solid rgb(39, 175, 39);
+}
