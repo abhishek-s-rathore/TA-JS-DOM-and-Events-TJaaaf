@@ -12,7 +12,7 @@ function handleSubmit(event) {
   userInfo.color = form.elements.color.value;
   userInfo.rating = form.elements.rating.value;
   userInfo.book = form.elements.drone.value;
-  userInfo.terms = form.elements.terms.value;
+  userInfo.terms = form.elements.terms.checked;
 
   name.innerText = `${userInfo.name}`;
   para1 = document.createElement("p");
