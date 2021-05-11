@@ -91,3 +91,30 @@ input[type="text"] {
 .terms {
   display: inline-block;
 }
+
+.flex{
+  display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.model {
+  display: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  position:relative;
+  width:500px;
+}
+
+
+.closeBtn{
+  position: absolute;
+  right: 15px;
+  top:-5px;
+  color: gray;
+}
+
