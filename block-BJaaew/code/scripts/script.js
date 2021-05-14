@@ -13,7 +13,7 @@ let allHouses = got.houses.map((house) => {
 });
 
 //To Create House List
-function createHouseList(houses) {
+function createHouseList(houses = []) {
   houseList.innerHTML = "";
   houses.forEach((house) => {
     let button = document.createElement("button");
