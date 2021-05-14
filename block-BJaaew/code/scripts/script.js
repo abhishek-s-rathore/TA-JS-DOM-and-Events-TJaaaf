@@ -1,17 +1,45 @@
-`<li class="card flex-30 flex flex-column justify-between align-center padding">
-<div class="imgBox">
-  <img src="" alt=".">
-</div>
- <cite>Name</cite>
- <p>About</p>
- <button class="btn btn-secondary">Know More!</button>
-</li>`;
-
 let root = document.querySelector("ul");
-let box = document.querySelector(".houses");
+let houseList = document.querySelector(".houses");
+let search = document.querySelector("#search");
+let activeHouse = "";
 
-got.houses.forEach((house) => {
-  house.people.forEach((person) => {
+let allPeople = got.houses.reduce((acc, cv) => {
+  acc = acc.concat(cv.people);
+  return acc;
+}, []);
+
+let allHouses = got.houses.map((house) => {
+  return house.name;
+});
+
+//To Create House List
+function createHouseList(houses) {
+  houseList.innerHTML = "";
+  houses.forEach((house) => {
+    let button = document.createElement("button");
+    button.classList.add("btn", "btn-primary");
+    button.innerText = house;
+
+    if (activeHouse === house) {
+      button.classList.add("active");
+    }
+
+    button.addEventListener("click", () => {
+      activeHouse = house;
+      let peopleOfHouse =
+        got.houses.find((tag) => tag.name === house).people || [];
+      createCard(peopleOfHouse);
+      createHouseList(houses);
+    });
+
+    houseList.append(button);
+  });
+}
+
+//To Create Card
+function createCard(persons = []) {
+  root.innerHTML = "";
+  persons.forEach((person) => {
     let li = document.createElement("li");
     li.classList.add(
       "card",
@@ -28,18 +56,21 @@ got.houses.forEach((house) => {
      </div>
       <cite>${person.name}</cite>
       <p>${person.description}</p>
-      <a href="${person.wikiLink}" class="btn btn-secondary">Know More!</a>
+      <a href="${person.wikiLink}" target= "-blank" class="btn btn-secondary">Know More!</a>
      `;
-
     root.append(li);
   });
+}
 
-  //Name Of Houses
-  let button = document.createElement("button");
-  button.classList.add("btn", "btn-primary");
-  button.innerText = house.name;
+function handleSearch(event) {
+  searchText = event.target.value;
+  let filteredPeople = allPeople.filter((p) => {
+    return p.name.toLowerCase().includes(searchText.toLowerCase());
+  });
+  createCard(filteredPeople);
+}
 
-  box.append(button);
+search.addEventListener("keyup", handleSearch);
 
-  // Filter By Houses
-});
+createHouseList(allHouses);
+createCard(allPeople);
