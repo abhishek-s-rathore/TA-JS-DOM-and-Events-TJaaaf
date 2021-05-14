@@ -1,0 +1,190 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: ;
+  --secondary: ;
+  --tertiory: ;
+  --darktext: #000000;
+  --lighttext: rgb(160, 160, 160);
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "KoHo", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 20px 0;
+  background:whitesmoke;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content:center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-47 {
+  flex: 0 1 47%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  color: #fff;
+  /* background-color: ; */
+  border: 1px solid darkgray;
+}
+
+.btn-secondary {
+  /* color: ; */
+  background-color: #fff;
+  border: 1px solid darkgray;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text  */
+
+.text-center {
+  text-align: center;
+}
+
+/*Position*/
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Grid */
+
+.grid {
+  max-width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding-top:.25rem;
+  padding-bottom: .25rem;
+}
+
+.card {
+  margin: .25rem;
+  background-color: #6589f9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 135px;
+  width: 135px;
+  font-size: 2rem;
+  color: black;
+}
+
+.selected{
+  border: 5px solid palevioletred;
+  background-color: yellow;
+}
