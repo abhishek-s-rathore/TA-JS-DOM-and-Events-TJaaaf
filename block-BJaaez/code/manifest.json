@@ -1,0 +1,9 @@
+{
+    "name": "TODO List",
+    "description": "Extension for adding the todo.",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

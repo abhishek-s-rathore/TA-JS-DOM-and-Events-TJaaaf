@@ -3,10 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>TODO Extension</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <main class="flex justify-between align-start">
+      <div class="parl flex-50 padding1">
+        <h1>
+          Hey!<br />
+          Add your todos here. <br />
+          Let's complete them.
+        </h1>
+      </div>
+      <div class="main container parl flex-60">
+        <h1>TODO LIST</h1>
+        <div class="flex justify-between align-center padding">
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Add you todos !"
+          />
+          <span id="addTodo" class="flex justify-center align-center"
+            >&plus;</span
+          >
+        </div>
+
+        <ul></ul>
+        <div class="flex justify-between align-center padding options">
+          <span id="all">All</span>
+          <span id="completed">Completed</span>
+          <span id="pending">Pending</span>
+          <span id="clear">Clear</span>
+        </div>
+      </div>
+    </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
