@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+    <title>Chrome Extension</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5cc6fb9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="window relative">
+      <div class="container">
+        <h1>Good Morning <span id="user">Abhishek!</span></h1>
+
+        <div class="time">
+          <p>
+            <span id="hours">12</span>:<span id="min">00</span>:<span id="sec"
+              >00</span
+            >
+          </p>
+          <!---- <h2 id="am-pm">AM</h2>-->
+        </div>
+        <div class="date">
+          <p>
+            <span id="day">Friday</span>, <span id="month">Jan</span>-<span
+              id="date"
+              >12</span
+            >-<span id="year">2020</span>
+          </p>
+        </div>
+      </div>
+
+      <blockquote class="quote fixed">
+        <i class="fas fa-quote-left"></i>
+        <span class="quoteText"></span>
+        <i class="fas fa-quote-right"></i>
+      </blockquote>
+
+      <!-- Customize your  -->
+       <!-- <div class="custom fixed flex justify-between align-start" style="display: none;"> 
+        <div>
+          <ul>
+            <li><p>General</p></li>
+            <li><p>Theme</p></li>
+            <li><p>Time and Date</p></li>
+            <li><p>General</p></li>
+            <li><p>Bookmarks</p></li>
+            <li><p>About</p></li>
+            <li><p>Contact</p></li>
+          </ul>
+        </div>
+
+        <div class="custom-subbox">
+          <h3>General</h3>
+          <ul>
+            <li>
+              <div
+                style="width: 15rem"
+                class="flex justify-between align-center margin1"
+              >
+                <p>Show Weather</p>
+                <div class="slider1 font-0 flex align-center">
+                  <span class="circle1"> </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex justify-between align-center margin1">
+                <p>Show Time</p>
+                <div class="slider1 font-0 flex align-center">
+                  <span class="circle1"> </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex justify-between align-center margin1">
+                <p>Show Date</p>
+                <div class="slider1 font-0 flex align-center">
+                  <span class="circle1"> </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex justify-between align-center margin1">
+                <p>Show Stopwatch</p>
+                <div class="slider1 font-0 flex align-center">
+                  <span class="circle1"> </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex justify-between align-center margin1">
+                <p>Show Todo</p>
+                <div class="slider1 font-0 flex align-center">
+                  <span class="circle1"> </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex justify-between align-center">
+                <p>Show Quote</p>
+                <div class="slider1 font-0 flex align-center">
+                  <span class="circle1"> </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <i class="fas fa-caret-down tail fixed"></i>
+      </div> -->
+    </main>
+
+    <!--Buttons-->
+    <div class="slider fixed font-0 flex align-center">
+      <span class="circle"> </span>
+    </div>
+    <button class="setting fixed"><i class="fas fa-cog"></i></button>
+    <!--ToDo List-->
+    <div class="todo fixed">
+      <h2>TODO LIST</h2>
+      <div class="flex justify-between align-center">
+        <input
+          type="text"
+          id="text"
+          name="text"
+          placeholder="Add you todos !"
+        />
+        <span id="addTodo" class="flex justify-center align-center"
+          >&plus;</span
+        >
+      </div>
+
+      <ul class="ul"></ul>
+      <div class="flex justify-between align-center options margin">
+        <span id="all" class="btn btn-secondary">All</span>
+        <span id="completed" class="btn btn-secondary">Completed</span>
+        <span id="pending" class="btn btn-secondary">Pending</span>
+        <span id="clear" class="btn btn-secondary">Clear</span>
+      </div>
+    </div>
+
+    <!--Stop Watch-->
+    <p class="stopwatch fixed">
+      <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+    </p>
+
+    <!--Weather-->
+    <div class="weather fixed">
+      <h3>Weather</h3>
+      <p>Light Rain</p>
+      <i class="fas fa-cloud-rain"></i>
+      <p>Temperature: <span>25 deg C</span></p>
+    </div>
+
+    <!--Accounts-->
+    <nav class="accounts fixed">
+      <ul class="flex justify-between align-center">
+        <li>
+          <a href="https://github.com/abhishek-s-rathore"><i class="fab fa-github-square"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-instagram-square"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
