@@ -61,7 +61,7 @@ function dateAndTime() {
   document.querySelector("#year").innerText = years;
 }
 
-setInterval(dateAndTime, 1000);
+setInterval(dateAndTime, 100);
 
 //Greeting, Wallpaper and Quote
 function features() {
