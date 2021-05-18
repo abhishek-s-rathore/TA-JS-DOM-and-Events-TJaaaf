@@ -120,7 +120,7 @@ let images = [
 },
 {
     name: "20",
-   image : "./assets/media/shado.jpg"
+   image : "./assets/media/shadow.jpg"
 },
 {
     name: "21",
