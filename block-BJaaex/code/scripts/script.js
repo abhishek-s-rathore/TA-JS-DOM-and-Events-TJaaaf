@@ -1,29 +1,72 @@
-const game = document.getElementById("game");
+let game = document.querySelector("#game");
+let refreshBtn = document.querySelector("#refresh");
 
-const grid = document.createElement("section");
-grid.setAttribute("class", "grid");
+let grid = cards.concat(cards);
 
-game.appendChild(grid);
+grid.sort(()=> Math.random()- 0.5);
 
-let gridArray = cardsArray.concat(cardsArray);
 
-gridArray.sort(() => Math.random()- 0.5) ;
+function createUI(){
 
-gridArray.forEach((item) => {
+grid.forEach(elem =>{
+
   let card = document.createElement("div");
-  card.classList.add("card", "flex", "justify-center", "align-center");
-  card.dataset.name = item.name;
-  card.style.backgroundImage = `url(${item.image})`;
+  card.setAttribute("class", "cards");
+  card.style.marginBottom = ".35rem";
+  card.style.backgroundImage = `url("${elem.image}")`
+  game.append(card);
 
-card.addEventListener("click", handleClick);
+  setTimeout(() => {
+    game.innerHTML = "";
 
-  grid.appendChild(card);
+    grid.forEach(elem =>{
 
+      let card = document.createElement("div");
+      card.setAttribute("class", "cards");
+      card.style.marginBottom = ".25rem";
+      card.style.backgroundImage = `url("${elem.image}")`;
+      
+      let cover = document.createElement("div");
+      cover.setAttribute("class", "cover");
+      cover.dataset.name = `${elem.name}`;
+      card.append(cover);
+
+      game.append(card);
+    
+//Action On Card
+
+//Action On Card Ends
+      });
+    
+  }, 5000);
 
 });
 
+};
+
+createUI();
+refreshBtn.addEventListener("click", createUI);
+
+let name1, name2;
+
+function handleClick2(event, name1){
+  
+  // console.log(event.target);
+  event.target.remove();
+  name2 =event.target.dataset.name;
+  console.log(name1, name2);
+}
+
 function handleClick(event){
   
-event.target.classList.add("selected");
+  // console.log(event.target);
+  event.target.remove();
+  name1 =event.target.dataset.name;
+  game.addEventListener("click", handleClick2(name1));
+ 
+}
 
-};
+game.addEventListener("click", handleClick);
+
+
+

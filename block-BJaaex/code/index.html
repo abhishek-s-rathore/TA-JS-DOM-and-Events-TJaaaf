@@ -18,9 +18,30 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <h1 class="text-center">Memory Game</h1>
-    <div id="game"></div>
+    <header class="text-center">
+      <h1 class="text-center">Memory Game</h1>
+      <div class="flex justify-between align-center dashBoard">
+        <p>
+          Lives:
+          <span style="color: rgb(255, 0, 0)" ;
+            ><i class="fas fa-heart" id="3"></i>
+            <i class="fas fa-heart" id="2"></i>
+            <i class="fas fa-heart-broken" id="1"></i
+          ></span>
+        </p>
+        <p>
+          Play Again:
+          <span style="color: rgb(13, 122, 13)" id="refresh"
+            ><i class="fas fa-sync-alt"></i
+          ></span>
+        </p>
+      </div>
+    </header>
+    <div id="game" class="flex justify-between align-center flex-wrap">
+      
+    </div>
     <script src="./scripts/data.js"></script>
     <script src="./scripts/script.js"></script>
   </body>

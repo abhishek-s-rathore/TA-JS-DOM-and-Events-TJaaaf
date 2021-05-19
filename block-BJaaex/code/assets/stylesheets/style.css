@@ -8,7 +8,6 @@
 :root {
   --primary: ;
   --secondary: ;
-  --tertiory: ;
   --darktext: #000000;
   --lighttext: rgb(160, 160, 160);
 }
@@ -23,7 +22,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 20px 0;
-  background:whitesmoke;
+  background: whitesmoke;
 }
 
 *,
@@ -58,11 +57,19 @@ a {
 }
 
 .justify-center {
-  justify-content:center;
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .align-center {
   align-items: center;
+}
+
+.flex-wrap{
+  flex-wrap: wrap-reverse;
 }
 
 .flex-20 {
@@ -137,54 +144,52 @@ a {
 
 /*Position*/
 
-.rel {
+.relative {
   position: relative;
 }
 
-.abs {
+.absolute {
   position: absolute;
 }
 
-.fix {
+.fixed {
   position: fixed;
 }
 
 /*Headings*/
-
 h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
-
-/* Grid */
-
-.grid {
-  max-width: 730px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border: 1px solid black;
-  padding-top:.25rem;
-  padding-bottom: .25rem;
+.dashBoard {
+  max-width: 560px;
+  border: 2px solid black;
+  border-radius: 0.35rem;
+  margin: 0.5rem auto;
+  padding: 1rem;
 }
 
-.card {
-  margin: .25rem;
-  background-color: #6589f9;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 135px;
-  width: 135px;
-  font-size: 2rem;
-  color: black;
+#game {
+  max-width: 560px;
+  border: 2px solid black;
+  border-radius: 0.35rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
-.selected{
-  border: 5px solid palevioletred;
-  background-color: yellow;
+.cards {
+  height: 8rem;
+  width: 8rem;
+  border: 1px solid blue;
+  border-radius: 0.25rem;
+}
+
+.cover{
+  height: 8rem;
+  width: 8rem;
+  border: 4px solid rgb(182, 127, 54);
+  border-radius: 0.25rem;
+  background-color: blue;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
