@@ -1,7 +1,7 @@
-const cardsArray = [
+const cards = [
   {
     name: "sun",
-    image: "./assets/media/imgSun.svg",
+    image: "./assets/media/imgGift.svg",
   },
   {
     name: "star",
@@ -21,42 +21,15 @@ const cardsArray = [
   },
   {
     name: "cap",
-    image: "./assets/media/imgCap.svg",
+    image: "./assets/media/imgRs.svg",
   },
   {
     name: "flag",
-    image: "./assets/media/imgFlag.svg",
+    image: "./assets/media/imgBell.svg",
   },
   {
     name: "badge",
     image: "./assets/media/imgBadge.svg",
   },
-  {
-    name: "idea",
-    image: "./assets/media/imgIdea.svg",
-  },
-  {
-    name: "bell",
-    image: "./assets/media/imgBell.svg",
-  },
-  {
-    name: "rs",
-    image: "./assets/media/imgRs.svg",
-  },
-  {
-    name: "dollar",
-    image: "./assets/media/imgDollar.svg",
-  },
-  {
-    name: "yen",
-    image: "./assets/media/imgYen.svg",
-  },
-  {
-    name: "euro",
-    image: "./assets/media/imgEuro.svg",
-  },
-  {
-    name: "gift",
-    image: "./assets/media/imgGift.svg",
-  },
 ];
+
